@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="//cdn.bootcss.com/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/pinterest_grid.js"></script>
+    <style>
+        body {
+            background: #00f;
+        }
+        .text-center {
+            text-align: center;
+        }
+        #demo {
+            width: 90%;
+            margin: 20px auto;
+            position: relative;
+        }
+        article {
+            display: none;
+            position: absolute;
+            background: #fff;
+        }
+        #demo img {
+            max-width: 100%;
+        }
+        #demo p {
+            text-align: center;
+        }
+        .btn {
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 15px 20px;
+            background: #fff;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+            <section id="demo">
+                <article class="demo-panel">
+                   <img src="images/%20%20(1).jpg" alt="">
+                    <h1 class="text-center">{{x.title}}</h1>
+                    <p>{{x.description}}</p>
+                </article>
+                <article class="demo-panel">
+                   <img src="images/%20%20(2).jpg" alt="">
+                    <h1 class="text-center">{{x.title}}</h1>
+                    <p>{{x.description}}</p>
+                </article>
+                <article class="demo-panel">
+                   <img src="images/%20%20(3).jpg" alt="">
+                    <h1 class="text-center">{{x.title}}</h1>
+                    <p>{{x.description}}</p>
+                </article>
+                <article class="demo-panel">
+                   <img src="images/%20%20(4).jpg" alt="">
+                    <h1 class="text-center">{{x.title}}</h1>
+                    <p>{{x.description}}</p>
+                </article>
+                <article class="demo-panel">
+                   <img src="images/%20%20(5).jpg" alt="">
+                    <h1 class="text-center">{{x.title}}</h1>
+                    <p>{{x.description}}</p>
+                </article>
+                <article class="demo-panel">
+                   <img src="images/%20%20(6).jpg" alt="">
+                    <h1 class="text-center">{{x.title}}</h1>
+                    <p>{{x.description}}</p>
+                </article>
+                <article class="demo-panel">
+                   <img src="images/%20%20(7).jpg" alt="">
+                    <h1 class="text-center">{{x.title}}</h1>
+                    <p>{{x.description}}</p>
+                </article>
+                <article class="demo-panel">
+                   <img src="images/%20%20(8).jpg" alt="">
+                    <h1 class="text-center">{{x.title}}</h1>
+                    <p>{{x.description}}</p>
+                </article>
+                <article class="demo-panel">
+                   <img src="images/%20%20(9).jpg" alt="">
+                    <h1 class="text-center">{{x.title}}</h1>
+                    <p>{{x.description}}</p>
+                </article>
+                <article class="demo-panel">
+                   <img src="images/%20%20(10).jpg" alt="">
+                    <h1 class="text-center">{{x.title}}</h1>
+                    <p>{{x.description}}</p>
+                </article>
+                <article class="demo-panel">
+                   <img src="images/%20%20(11).jpg" alt="">
+                    <h1 class="text-center">{{x.title}}</h1>
+                    <p>{{x.description}}</p>
+                </article>
+                <article class="demo-panel">
+                   <img src="images/%20%20(12).jpg" alt="">
+                    <h1 class="text-center">{{x.title}}</h1>
+                    <p>{{x.description}}</p>
+                </article>
+                <article class="demo-panel">
+                   <img src="images/%20%20(13).jpg" alt="">
+                    <h1 class="text-center">{{x.title}}</h1>
+                    <p>{{x.description}}</p>
+                </article>
+                <article class="demo-panel">
+                   <img src="images/%20%20(14).jpg" alt="">
+                    <h1 class="text-center">{{x.title}}</h1>
+                    <p>{{x.description}}</p>
+                </article>
+                
+            </section>
+
+        <div class="btn btn-success">--添加新卡片--</div>
+    <script>
+        $(function(){
+            $("#demo").pinterest_grid({
+                breakpoint: [[0,1],[480,2],[640,3],[960,4],[1280,5]]
+            });
+            var html = '<article class="demo-panel"><img src="images/%20%20(14).jpg" alt=""><h1 class="text-center">{{x.title}}</h1><p>{{x.description}}</p></article>';
+            $(".btn").click(function(){
+                $("#demo").append(html);
+            })
+          
+        })
+    </script>
+</body>
+</html>
