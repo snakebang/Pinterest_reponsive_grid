@@ -42,72 +42,72 @@
 <body>
             <section id="demo">
                 <article class="demo-panel">
-                   <img src="images/%20%20(1).jpg" alt="">
+                   <img src="images/(1).jpg" alt="">
                     <h1 class="text-center">{{x.title}}</h1>
                     <p>{{x.description}}</p>
                 </article>
                 <article class="demo-panel">
-                   <img src="images/%20%20(2).jpg" alt="">
+                   <img src="images/(2).jpg" alt="">
                     <h1 class="text-center">{{x.title}}</h1>
                     <p>{{x.description}}</p>
                 </article>
                 <article class="demo-panel">
-                   <img src="images/%20%20(3).jpg" alt="">
+                   <img src="images/(3).jpg" alt="">
                     <h1 class="text-center">{{x.title}}</h1>
                     <p>{{x.description}}</p>
                 </article>
                 <article class="demo-panel">
-                   <img src="images/%20%20(4).jpg" alt="">
+                   <img src="images/(4).jpg" alt="">
                     <h1 class="text-center">{{x.title}}</h1>
                     <p>{{x.description}}</p>
                 </article>
                 <article class="demo-panel">
-                   <img src="images/%20%20(5).jpg" alt="">
+                   <img src="images/(5).jpg" alt="">
                     <h1 class="text-center">{{x.title}}</h1>
                     <p>{{x.description}}</p>
                 </article>
                 <article class="demo-panel">
-                   <img src="images/%20%20(6).jpg" alt="">
+                   <img src="images/(6).jpg" alt="">
                     <h1 class="text-center">{{x.title}}</h1>
                     <p>{{x.description}}</p>
                 </article>
                 <article class="demo-panel">
-                   <img src="images/%20%20(7).jpg" alt="">
+                   <img src="images/(7).jpg" alt="">
                     <h1 class="text-center">{{x.title}}</h1>
                     <p>{{x.description}}</p>
                 </article>
                 <article class="demo-panel">
-                   <img src="images/%20%20(8).jpg" alt="">
+                   <img src="images/(8).jpg" alt="">
                     <h1 class="text-center">{{x.title}}</h1>
                     <p>{{x.description}}</p>
                 </article>
                 <article class="demo-panel">
-                   <img src="images/%20%20(9).jpg" alt="">
+                   <img src="images/(9).jpg" alt="">
                     <h1 class="text-center">{{x.title}}</h1>
                     <p>{{x.description}}</p>
                 </article>
                 <article class="demo-panel">
-                   <img src="images/%20%20(10).jpg" alt="">
+                   <img src="images/(10).jpg" alt="">
                     <h1 class="text-center">{{x.title}}</h1>
                     <p>{{x.description}}</p>
                 </article>
                 <article class="demo-panel">
-                   <img src="images/%20%20(11).jpg" alt="">
+                   <img src="images/(11).jpg" alt="">
                     <h1 class="text-center">{{x.title}}</h1>
                     <p>{{x.description}}</p>
                 </article>
                 <article class="demo-panel">
-                   <img src="images/%20%20(12).jpg" alt="">
+                   <img src="images/(12).jpg" alt="">
                     <h1 class="text-center">{{x.title}}</h1>
                     <p>{{x.description}}</p>
                 </article>
                 <article class="demo-panel">
-                   <img src="images/%20%20(13).jpg" alt="">
+                   <img src="images/(13).jpg" alt="">
                     <h1 class="text-center">{{x.title}}</h1>
                     <p>{{x.description}}</p>
                 </article>
                 <article class="demo-panel">
-                   <img src="images/%20%20(14).jpg" alt="">
+                   <img src="images/(14).jpg" alt="">
                     <h1 class="text-center">{{x.title}}</h1>
                     <p>{{x.description}}</p>
                 </article>
@@ -120,8 +120,20 @@
             $("#demo").pinterest_grid({
                 breakpoint: [[0,1],[480,2],[640,3],[960,4],[1280,5]]
             });
-            var html = '<article class="demo-panel"><img src="images/%20%20(14).jpg" alt=""><h1 class="text-center">{{x.title}}</h1><p>{{x.description}}</p></article>';
+
+
+
+
+
+
+
+            /* add new card */
+
             $(".btn").click(function(){
+
+                var n = Math.floor(Math.random()*13)+1;
+                console.log(n);
+                var html = '<article class="demo-panel"><img src="images/('+n+').jpg" alt=""><h1 class="text-center">{{x.title}}</h1><p>{{x.description}}</p></article>';
                 $("#demo").append(html);
             })
           
