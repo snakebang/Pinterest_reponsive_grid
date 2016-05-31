@@ -18,4 +18,4 @@
 >                  保留了原插件的默认参数:   no_columns: 3
 
 
-增加 Demo(http://snakebang.xyz/Pointerest_reponsive_grid/) 演示页面
+增加 Demo(http://snakebang.xyz/Pinterest_reponsive_grid/) 演示页面
